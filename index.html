@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Landing-Page/css/slpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Simple Landing Page</title>
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="button" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content menu-main-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">
+                <img class="logo" src="../Landing-Page/img/logo.jpeg" alt="">
+            </a></h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#top3">Areas</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section class="sect main-bg" id="home">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Software Development</h2>
+                <p>Um programador de software, ou desenvolvedor de software, é um profissional que cria, testa e mantém
+                    programas de computador. Ele pode trabalhar em aplicativos, sites, sistemas de gerenciamento de
+                    dados e outros softwares. </p>
+            </div>
+            <div class="intro-img"><img src="../Landing-Page/img/primaryimage.svg" alt="Um homem à esquerda, pensando em um bloco de código, uma mulher sentada ao centro, com um laptop no colo, e um celular logo ao lado e, um homem à direita, com a mão no bolso pensando em várias folhas que giram ao redor. Dando contexto para a introdução da página.">
+            </div>
+        </div>
+    </section>
+
+    <div class="sect text-container main-content" id="intro">
+        <section>
+            <h2>Introdução a carreira</h2>
+            <p>Um desenvolvedor de software, ou simplesmente “dev”, é a pessoa responsável por projetar, codificar,
+                testar, implementar e manter sistemas e aplicações.</p>
+            <p>Cada vez mais empresas buscam criar sistemas digitais que sejam completos e atendam às necessidades de
+                seus clientes, aprimorando o desempenho geral da empresa.
+
+                Assim, a busca por profissionais capazes de criar bons softwares, sejam websites, aplicativos ou outros
+                tipos de sistemas, é cada vez maior. Esse profissional é uma parte essencial do time de Produto, pois
+                contribui ativamente para o processo de criação destes sistemas.</p>
+            <p>Além disso, apesar de ser comumente associado a uma área totalmente técnica, um desenvolvedor de software
+                é também um profissional muito criativo e analítico.
+
+                Podemos dizer que o trabalho do desenvolvedor é como o de um escritor, só que ao invés de escrever
+                palavras, usa-se as linguagens de programação para projetar, codificar e criar sistemas digitais
+                funcionais.</p>
+        </section>
+    </div>
+
+    <section class="sect main-bg grid-one" id="top3">
+        <div class="main-content grid-one-content">
+            <header>
+                <h2>Áreas de interesse</h2>
+                <p class="p1">Entenda sua área de interesse no campo da programação.</p>
+            </header>
+            <div class="grid-section">
+                <article>
+                    <h3>Front-end</h3>
+                    <p>O profissional desenvolvedor front-end é o responsável por colocar em prática, através de
+                        códigos, o design de um site ou interface. Enquanto o web design projeta o visual de um site, o
+                        desenvolvimento front-end implementa esse design através de códigos, como HTML, CSS e
+                        JavaScript.</p>
+                </article>
+                <article>
+                    <h3>Back-end</h3>
+                    <p>O back-end é a parte do sistema que não é visível para o usuário final. Ele é responsável por
+                        garantir que tudo funcione corretamente por trás da interface do usuário, que é o front-end.</p>
+                </article>
+                <article>
+                    <h3>Full-stack</h3>
+                    <p>Como atua um Desenvolvedor full-stack? Um Desenvolvedor Full-stack trabalha integrando diferentes
+                        tecnologias para construir aplicativos web ou móveis completos, que vão desde a interface do
+                        usuário até o banco de dados.</p>
+                </article>
+                <article>
+                    <h3>Mobile</h3>
+                    <p>Um programador mobile, também conhecido como desenvolvedor mobile, cria aplicativos para
+                        dispositivos móveis, como smartphones e tablets. Ele utiliza linguagens de programação
+                        específicas para escrever os códigos que definem a aparência e o funcionamento dos aplicativos.
+                    </p>
+                </article>
+                <article>
+                    <h3>Computação em nuvem</h3>
+                    <p>Um programador em nuvem, ou engenheiro de nuvem, é responsável por projetar, implementar,
+                        gerenciar e otimizar ambientes de computação em nuvem.</p>
+                </article>
+                <article>
+                    <h3>Banco de dados</h3>
+                    <p>Um programador de banco de dados desenvolve, mantém e otimiza sistemas de banco de dados, além de
+                        criar e executar consultas. </p>
+                </article>
+            </div>
+            <article class="p2">
+                <h3>Adquira conhecimentos básicos de programação</h3>
+                <p>Após entender seus campos de interesse, busque aprender conceitos básicos e as principais linguagens de programação necessárias para atuar no segmento que você deseja trabalhar.
+
+                    Aprenda como são construídas as estruturas de código, os termos-chave da área, como começar um projeto básico, entre outros.
+                    
+                    Para isso, você pode fazer cursos livres, assistir conteúdos sobre a área no YouTube, participar de fóruns e comunidades de devs, buscar guias e bootcamps na área, entre muitas outras opções. </p>
+            </article>
+        </div>
+
+    </section>
+
+    <section class="sect white-bg" id="gallery">
+        <div class="main-content gallery-content">
+            <header>
+                <h2>Gallery</h2>
+                <p>Principais linguagens de programação</p>
+            </header>
+            <div class="images-content">
+                <div class="gallery-images">
+                    <img src="https://academiatech.s3.amazonaws.com/wp-content/uploads/2023/02/python-11022023-1024x576.webp"
+                        alt="randomic images from unsplash">
+                </div>
+                <div class="gallery-images">
+                    <img src="https://academiatech.s3.amazonaws.com/wp-content/uploads/2023/04/javascript-25042023.webp"
+                        alt="randomic images from unsplash">
+                </div>
+                <div class="gallery-images">
+                    <img src="https://www.erudio.com.br/blog/wp-content/uploads/2024/12/java.png"
+                        alt="randomic images from unsplash">
+                </div>
+            </div>
+            <div class="images-content">
+                <div class="gallery-images">
+                    <img src="https://hermes.dio.me/assets/articles/63335c9c-4428-46d3-8d17-cdd9ceea3db0.png"
+                        alt="randomic images from unsplash">
+                </div>
+                <div class="gallery-images">
+                    <img src="https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/04/image3-5-e1681758172172.jpg"
+                        alt="randomic images from unsplash">
+                </div>
+                <div class="gallery-images">
+                    <img src="https://www.mindinventory.com/blog/wp-content/uploads/2022/08/advantages-of-golang.webp"
+                        alt="randomic images from unsplash">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sect main-bg" id="table">
+        <div class="main-content pricing-text">
+            <article>
+                <h2>Tabela aleatória e Estilizada</h2>
+                <p>Representação de uma tabela feita em HTML e estilizado por CSS</p>
+                <p></p>
+            </article>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Título 1</th>
+                            <th>Título 2</th>
+                            <th>Título 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Conteúdo 1</td>
+                            <td>Conteúdo 2</td>
+                            <td>Conteúdo 3</td>
+                        </tr>
+                        <tr>
+                            <td>Conteúdo 4</td>
+                            <td>Conteúdo 5</td>
+                            <td>Conteúdo 6</td>
+                        </tr>
+                        <tr>
+                            <td>Conteúdo 7</td>
+                            <td>Conteúdo 8</td>
+                            <td>Conteúdo 9</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Conteúdo com SPAN</td>
+                            <td>Conteúdo 11</td>
+                            <td>Conteúdo 12</td>
+                        </tr>
+                        <tr>
+                            <td>Conteúdo 13</td>
+                            <td>Conteúdo 14</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Rodapé</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="sect secondarybg" id="work">
+        <div class="main-content grid-one-content">
+            <header>
+                <h2>Áreas amplas para se atuar</h2>
+                <p class="p1">Algumas áreas de atuação.</p>
+            </header>
+            <div class="grid-section grid-section-two">
+                <article>
+                    <h3>Software Engineer</h3>
+                    <p>Um engenheiro de software é um profissional que projeta, desenvolve, testa, implementa e mantém sistemas e aplicações. É um profissional da área de TI que atua na criação de softwares, sites, jogos e outros ambientes virtuais.</p>
+                </article>
+                <article>
+                    <h3>Software Development</h3>
+                    <p>Um desenvolvedor de software, também conhecido como programador, é responsável por criar, testar, modificar e manter programas de computador.</p>
+                </article>
+                <article>
+                    <h3>Database Analyst</h3>
+                    <p>Um analista de dados coleta, organiza, interpreta e analisa dados para ajudar a tomar decisões estratégicas. Ele pode trabalhar em diversos setores, como marketing, vendas e TI.</p>
+                </article>
+                <article>
+                    <h3>Mobile Development</h3>
+                    <p>Um programador mobile, também conhecido como desenvolvedor mobile, cria aplicativos para dispositivos móveis, como smartphones e tablets. Ele utiliza linguagens de programação específicas para escrever os códigos que definem a aparência e o funcionamento dos aplicativos.</p>
+                </article>
+                <article>
+                    <h3>IA Programing</h3>
+                    <p>Um programador de IA desenvolve algoritmos e modelos que permitem às máquinas aprender e tomar decisões automaticamente. Ele lida com dados e aplica técnicas de aprendizado de máquina para criar soluções inovadoras.</p>
+                </article>
+                <article>
+                    <h3>Security Programing</h3>
+                    <p>Um programador de segurança, ou desenvolvedor de segurança, é um profissional que aplica sistemas de segurança em softwares e programas. Ele também revisa códigos em produção e mantém os sistemas operacionais da empresa atualizados.</p>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="sect main-bg" id="contact">     
+        <div class="main-content contact-container">
+            <div class="contact-text-content">
+                <article>
+                    <h2>Entre em contato</h2>
+                    <p>Landing page desenvolvida apenas com HTML e CSS, com base nos meus estudos até o momento.</p>
+                    <p>Abaixo, algumas informações precisas, caso queira entrar em contato.</p>
+                </article>
+            </div>
+            <div class="contact-img">
+                <img src="../Landing-Page/img/contact.svg" alt="Uma mulher segurando um envelope, um celular um pouco ao lado e, um telefone um pouco ao lado do celular e mais para baixo, indicando o lugar certo para entrar em contato.">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Your message</label>
+                        <textarea name="message" id="message" placeholder="Your message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Send message</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <footer class="final-footer">
+        <p><a rel="nofollow" target="_blank" href="#">Feito com <span class="span">❤</span> por Felipe Rodrigues </a>
+        </p>
+    </footer>
+
+    <a class="back-to-top" href="#home">➤</a>
+</body>
+
+</html>

@@ -1,0 +1,626 @@
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Open Sans", sans-serif; */
+/* Criação de variáveis */
+:root {
+    --primary-color: #0A1128;
+    --white-color: #ffffff;
+    --gap: 3rem;
+    --light-gray-color: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* Classe para mexer na h1 da navbar */
+.menu h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+
+}
+/* Classe para mexer no A do H1 da navbar */
+.menu h1 a {
+    text-decoration: none;
+    color: inherit;
+
+}
+/* Cor da navbar */
+.white-bg {
+    background: var(--white-color);
+}
+
+
+/* Imagem principal do site */
+.main-bg {
+    background-image: url(../img/secondarybg.svg);
+    background-position: center center;
+    color: var(--white-color);
+}
+
+/* Classe para definir oq é o conteúdo */
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap);
+}
+
+.menu-main-content {
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 8rem var(--gap); 
+}
+/* Classe para mexer na UL da navbar */
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+/* Classe para mexer na UL LI A da nav bar */
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+}
+/* Classe para mexer no a do menu */
+.menu a {
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+/* Classe para alinhar as sessões com 100% da viewport do navegador */
+.sect {
+    min-height: 100vh;
+}
+/* Menu e barra de navegação principal */
+.menu { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
+}
+/* Conteúdo do menu */
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+}
+/* Div vazia para dar o espaçamento necessário que a barra de navegação pega para o próximo conteúdo */
+.menu-spacing {
+    height:65px;
+}
+/* Começo de edição da primeira sessão. Conteúdo da primeira div */
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    position: relative;
+    top: -6.5rem;
+}
+/* Classe para mexer no conteúdo das grids */
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+.intro-text-content p {
+    font-size: 3rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+.intro-img img {
+    width: 100%;
+    /* min-height: auto; */
+}
+
+
+/* Segunda sessão */
+.text-container {
+    padding: 5rem 8rem;
+    max-width: 60rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    background: var(--white-color);
+}
+
+.text-container h2 {
+    margin-bottom: 5rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.text-container p {
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+
+/* Terceira sessão */
+
+.grid-one-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: var(--gap);
+    color: var(--primary-color);
+}
+
+.grid-one-content h2 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+.grid-one-content .p1 {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.p2 h3 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.p2 p {
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+    color: var(--primary-color);
+    
+}
+
+.grid-section h3 {
+    font-size: 3rem;
+    position:relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    color: var(--primary-color);
+    font-style: italic;
+
+}
+
+
+.grid-section h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    font-size: 3rem;
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3rem;
+    left: -1rem;
+    transform: rotate(6deg);
+    color: crimson;
+}
+
+/* Quarta sessão */
+.gallery-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.gallery-content header {
+    margin-bottom: 8rem;
+}
+
+.gallery-content h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.images-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.gallery-images {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-images img {
+    transition: all 300ms ease-in-out;
+    width: 36rem; height: 36rem;
+}
+
+.gallery-images img:hover {
+    transform: translate(-3%, -3%) scale(1.2) rotate(5deg)
+}
+
+/* Quinta sessão */
+
+.pricing-text {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.pricing-text h2 {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--primary-color);
+}
+
+.pricing-text p {
+    line-height: 1.5;
+    color: var(--primary-color);
+}
+
+table {
+    width: 100%;
+    min-width: 36rem;
+    border-collapse: collapse;
+} 
+
+table caption {
+    text-align: left;
+    font-style: italic;
+    font-size: 1.3rem ;
+    padding: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #1b3fb6be;
+}
+
+table td, table th {
+    border: 0.1rem solid var(--primary-color);
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+
+table th {
+    background: #1b3fb6be;
+}
+
+table tfoot {
+    font-style: italic;
+    padding: 0.5rem;
+    background: #1b3fb6be;
+}
+
+.responsive-table {
+    margin-top: 5rem;
+    overflow-x: auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* Algumas modificações na sexta sessão */
+
+.grid-section-two h3 {
+    font-size: 3rem;
+    position:relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    color: var(--primary-color);
+    font-style: italic;
+
+}
+
+
+.grid-section-two h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    font-size: 3rem;
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3rem;
+    left: -1rem;
+    transform: rotate(6deg);
+    color: #1b3fb6be;
+}
+
+/* Última sessão */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    min-height: 100vh;
+    gap: var(--gap);
+}
+
+.contact-text-content, .contact-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.contact-text-content h2 {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.contact-text-content p {
+    line-height: 1.5;
+    color: var(--primary-color);
+}
+
+.contact-img img {
+    min-height: auto;
+    max-width: 100%;
+    padding-left: 5rem;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 auto;
+}
+
+
+.form-group label {
+    display: block;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    border-radius: 1rem;
+    background: var(--light-gray-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    border-radius: 5rem;
+    background: #6993a6;
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: #485aaa;
+
+}
+
+.form-group ::placeholder {
+    color: #ccc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-grid legend {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--white-color);
+    font-size: 1.9rem;
+    padding: 1.1rem;
+    border-radius: 2rem;
+}
+
+.final-footer {
+    height: 10vh;
+    text-align: center;
+    padding-top: 3.5rem;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.final-footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    
+}
+
+.span {
+    color: red;
+}
+
+.close-menu {
+   display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 2rem;
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
+
+
+/* Tornando o menu da Landing Page responsiva para qualquer tipo de aparelho */
+@media (max-width: 800px) {
+    .intro-content, .grid-section, .images-content {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-images {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-images img {
+        width: 100%;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .close-menu-label::after {
+        content: "☰";
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+        content: "×";
+    }
+
+    .menu-spacing {
+        display: none;
+
+    }
+
+}
+
+/* Fazendo mais alguns ajustes nos títulos em diferentes tamanhos de tela */
+@media all and (min-width: 320px) and (max-width: 600px) {
+    .intro-text-content h2, .text-container h2, .grid-one-content h2, .gallery-content h2, .pricing-text h2, .grid-section-two h3{
+        font-size: 4rem;
+    }
+}
+
+/* Fazendo mais ajustes no form e no texto de introdução em telas bem menores */
+@media (min-width: 320px) {
+    .text-container {
+        padding: 5rem 3rem;
+    }
+
+    .form-group input, .form-group textarea {
+        border: none;
+        border-radius: 1rem;
+        background: var(--light-gray-color);
+        width: 90%;
+        font-size: 2rem;
+    }
+}
