@@ -1,3 +1,3 @@
 # Simple Landing-Page
 
-### Landing Page criada, com o intuito de mostrar minha evolução em HTML e CSS.
+### Landing-Page criada apenas com HTML e CSS, afim de mostrar um potencial de evolução durante meus projetos.
