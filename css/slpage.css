@@ -52,9 +52,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Cor da navbar */
 .white-bg {
-    background: var(--white-color);
+    background: linear-gradient(90deg, rgb(23, 56, 81), rgb(190, 237, 245))
 }
-
 
 /* Imagem principal do site */
 .main-bg {
@@ -120,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 0.1rem solid var(--light-gray-color);
+    border-bottom: 0.3rem solid transparent;
     z-index: 1;
 }
 /* Conteúdo do menu */
