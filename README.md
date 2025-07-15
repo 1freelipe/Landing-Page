@@ -9,4 +9,4 @@
   <img width='40' heigth='40' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"/>
 </div>
 
-Confira a Landing Page [Clicando aqui](https://1freelipe.github.io/Landing-Page/)
+Confira a Landing Page [clicando aqui](https://1freelipe.github.io/Landing-Page/)
